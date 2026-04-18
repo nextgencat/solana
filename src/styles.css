@@ -638,7 +638,7 @@ body {
     gap: 15px;
     max-width: 600px;
     width: 100%;
-
+    margin-top: 1rem;
 }
 
 .links-container {
