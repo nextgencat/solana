@@ -73,6 +73,16 @@
     --social-card-brd-bottom: rgb(255,255,255, 0.1);
     --separator-col: #292929;
 
+    /* footer */
+    --footer-mesh-col: rgb(53, 53, 53, 0.3); 
+    --footer-mesh: linear-gradient(var(--footer-mesh-col) 1px, transparent 1px),
+        linear-gradient(90deg, var(--footer-mesh-col) 1px, transparent 1px);
+    --footer-bg: radial-gradient(1000px 400px at 50% 50%, rgba(65, 65, 65, 0.2), rgb(0, 0, 0));
+
+    --footer-link-text: #5e5e5e;
+    --footer-link-active-text: #fff;
+    --footer-info-text: #949494;
+
 }
 
 * {
@@ -561,11 +571,8 @@ body {
 }
 
 .social-card img {
-    /* width: 100%;
-    max-height: 300px; */
-    height: 100%;
     max-width: 700px;
-    object-fit: cover;
+    width: 100%;
     border-radius: 20px 0 0 20px;
     opacity: 0.9;
 }
@@ -583,11 +590,13 @@ body {
     font-family: "Michroma", monospace;
     font-size: 2rem;
     text-shadow: 0 0 15px rgba(var(--accent-col), 0.3);
+    letter-spacing: 1px;
 }
 
 .social-card p {
     color: var(--social-desc);
     font-family: "Questrial", monospace;
+    letter-spacing: 1px;
 }
 
 .separator {
@@ -609,28 +618,82 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem;
-    background-color: red;
-    gap: 10px
+    background-color: #000;
+    background-image: var(--footer-mesh);
+    background-repeat: repeat;
+    background-size: 40px 40px;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: row;
-    background-color: rebeccapurple;
-    max-width: 1200px;
+    justify-content: center;
+    background: var(--footer-bg);
     width: 100%;
+    padding: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
     gap: 15px;
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--footer-link-text);
+    font-family: "Questrial", monospace;
+    transition: 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.footer-links a:hover {
+    color: var(--footer-link-active-text);
+    text-shadow: 0 0 15px rgba(var(--accent-col), 0.3);
+
+}
+
+.footer-info p {
+    text-align: center;
+    color: var(--footer-info-text);
+    font-family: "Questrial", monospace;
+    font-size: 1.1rem;
+}
+
+.footer-info .hg {
+    color: var(--footer-info-text);
+    font-style: italic;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.footer-info .hg:hover {
+    color: var(--footer-link-active-text);
+    text-shadow: 0 0 15px rgba(var(--accent-col), 0.3);
+
 }
 
 /* ---------------------mobile---------------------- */
 
 @media only screen and (max-width: 600px) {
+
+    :root{
+        --footer-bg: radial-gradient(300px 400px at 50% 50%, rgba(65, 65, 65, 0.2), rgb(0, 0, 0));
+    }
 
     .logo h1 {
         font-size: 1rem;
@@ -675,6 +738,7 @@ body {
         max-height: 300px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+        
     }
 
     .social-card h1 {

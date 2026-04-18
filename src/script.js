@@ -5,6 +5,10 @@ function scrollToProducts() {
     }
 }
 
-function joinTg() {
+function openTg() {
     window.open("https://t.me/get_solana", '_blank')
+}
+
+function openGitHub() {
+    window.open("https://github.com/nextgencat/solana", '_blank')
 }
