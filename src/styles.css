@@ -163,9 +163,9 @@ body {
     transition: 0.4s ease;
 }
 
-.ul-list li {
+/* .ul-list li {
 
-}
+} */
 
 .ul-list a::after {
     content: "";
@@ -686,6 +686,8 @@ body {
     text-shadow: 0 0 15px rgba(var(--accent-col), 0.3);
 
 }
+
+/* DOWNLOAD PAGE */
 
 /* ---------------------mobile---------------------- */
 

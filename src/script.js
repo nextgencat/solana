@@ -9,6 +9,14 @@ function openTg() {
     window.open("https://t.me/get_solana", '_blank')
 }
 
+function openDc() {
+    window.open("https://discord.com/", '_blank')
+}
+
 function openGitHub() {
     window.open("https://github.com/nextgencat/solana", '_blank')
+}
+
+function download() {
+    window.open("https://go.linkify.ru/2HY2", '_blank')
 }
