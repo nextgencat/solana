@@ -10,7 +10,7 @@ function openTg() {
 }
 
 function openDc() {
-    window.open("https://discord.com/", '_blank')
+    window.open("https://discord.gg/8uG3g4AW7K", '_blank')
 }
 
 function openGitHub() {
